@@ -12,7 +12,8 @@ Comes equipped with:
 
 Commands
 
-- `npm run build`: Build and output minified project in the bin directory
+- `npm run build`: Minify and output project to the bin directory
+- `npm run clean`: Clean output (bin) directory
 - `npm run serve`: Run the minified project output
 - `npm start`: Run the project with auto-reload
 - `npm test`: Run linter and Mocha tests
