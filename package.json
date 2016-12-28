@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "babel src -d bin",
+    "build": "babel src -d bin --source-maps",
     "serve": "node bin",
     "start": "babel-watch src",
     "test": "mocha --compilers js:babel-core/register test/*.spec.js",
@@ -29,6 +29,7 @@
     "parser": "babel-eslint"
   },
   "babel": {
+    "comments": false,
     "presets": [
       "babili",
       "latest-minimal"
