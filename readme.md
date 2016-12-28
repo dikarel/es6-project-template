@@ -2,7 +2,7 @@
 
 NodeJS ES6 project template
 
-Comes equipped with:
+**Comes equipped with:**
 
 - babel
 - fetch
@@ -10,7 +10,7 @@ Comes equipped with:
 - power-assert
 - standard
 
-Commands
+**Commands:**
 
 - `npm run build`: Minify and output project to the bin directory
 - `npm run clean`: Clean output (bin) directory
