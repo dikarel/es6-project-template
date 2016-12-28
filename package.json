@@ -1,0 +1,42 @@
+{
+  "name": "project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "babel src -d bin",
+    "serve": "node bin",
+    "start": "babel-watch src",
+    "test": "mocha --compilers js:babel-core/register test/*.spec.js",
+    "watch": "mocha --compilers js:babel-core/register test/*.spec.js --reporter min --watch"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-espower": "^2.3.1",
+    "babel-plugin-transform-async-generator-functions": "^6.17.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-preset-babili": "0.0.9",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "babel-watch": "^2.0.5",
+    "mocha": "^3.2.0",
+    "mocha-standard": "^1.0.0",
+    "standard": "^8.6.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": [
+      "babili"
+      "latest-minimal",
+    ],
+    "plugins": [
+      "espower"
+      "transform-async-generator-functions",
+      "transform-flow-strip-types",
+    ]
+  }
+}
