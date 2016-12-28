@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "babel src -d bin --source-maps --presets babili,latest-minimal",
+    "clean": "rm -rf bin/*",
     "serve": "node bin",
     "start": "babel-watch src",
     "test": "mocha --require babel-register test/*.spec.js",
