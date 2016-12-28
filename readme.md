@@ -12,8 +12,8 @@ Comes equipped with:
 
 Commands
 
-- `npm start`: Run the project with auto-reload
 - `npm build`: Build and output minified project in the bin directory
 - `npm serve`: Run the minified project output
+- `npm start`: Run the project with auto-reload
 - `npm test`: Run linter and Mocha tests
 - `npm watch`: Automatically run tests on file change
