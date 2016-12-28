@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "babel src -d bin --source-maps",
+    "build": "babel src -d bin --source-maps --presets babili,latest-minimal",
     "serve": "node bin",
     "start": "babel-watch src",
-    "test": "mocha --compilers js:babel-core/register test/*.spec.js",
+    "test": "mocha --require babel-register test/*.spec.js",
     "watch": "mocha --compilers js:babel-core/register test/*.spec.js --reporter min --watch"
   },
   "dependencies": {
@@ -15,14 +15,15 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
-    "babel-plugin-espower": "^2.3.1",
     "babel-plugin-transform-async-generator-functions": "^6.17.0",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "babel-preset-babili": "0.0.9",
     "babel-preset-latest-minimal": "^1.1.2",
+    "babel-preset-power-assert": "^1.0.0",
     "babel-watch": "^2.0.5",
     "mocha": "^3.2.0",
     "mocha-standard": "^1.0.0",
+    "power-assert": "^1.4.2",
     "standard": "^8.6.0"
   },
   "standard": {
@@ -31,11 +32,10 @@
   "babel": {
     "comments": false,
     "presets": [
-      "babili",
-      "latest-minimal"
+      "latest-minimal",
+      "power-assert"
     ],
     "plugins": [
-      "espower",
       "transform-async-generator-functions",
       "transform-flow-strip-types"
     ]

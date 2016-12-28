@@ -1,9 +1,9 @@
 /* eslint-env mocha */
 
-import assert from 'assert'
+import assert from 'power-assert'
 
 describe('test', function () {
   it('test assertions work', () => {
-    assert(true)
+    assert('lima' === 'llama')
   })
 })
