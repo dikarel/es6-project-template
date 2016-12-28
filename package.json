@@ -30,13 +30,13 @@
   },
   "babel": {
     "presets": [
-      "babili"
-      "latest-minimal",
+      "babili",
+      "latest-minimal"
     ],
     "plugins": [
-      "espower"
+      "espower",
       "transform-async-generator-functions",
-      "transform-flow-strip-types",
+      "transform-flow-strip-types"
     ]
   }
 }
